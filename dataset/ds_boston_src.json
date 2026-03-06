@@ -1,0 +1,29 @@
+{
+	"name": "ds_boston_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dadosbostonsandir.zip",
+				"container": "servicosbostonsandir"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000@\u0016f\\u�����\u0001�W\u0000\b",
+				"type": "String"
+			}
+		]
+	}
+}
